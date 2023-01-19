@@ -1,0 +1,645 @@
+<html lang="es">
+  <head>
+    <!-- PLANTILLA LIBRE DE USO -->
+    <!-- JOE MARTINEZ -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TITULO  -->
+
+    <title> Café Bristó </title>
+
+    <!-- FAVICON  -->
+
+    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
+
+    <!--  Remix icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- ESTILOS CSS -->
+
+
+    <link rel="stylesheet" href="./estilos/normalize.css" />
+    <link rel="stylesheet" href="./estilos/estilos.css" />
+
+
+  </head>
+   
+  <body>
+
+    <!-- Loader -->
+
+    <div class="load" id="load">
+      <img src="./imgs/loadcoffee.gif" alt="gif cafe" class="load__gif">
+    </div>
+
+    <!-- Header -->
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./imgs/logo.png" alt="Logo Cafe" class="nav__logo-img">
+          Café Bristó
+          <img src="./imgs/flag.png" alt="Bandera de Venezuela" class="nav__logo-icon">
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            
+            <li class="nav__item">
+              <a href="#home" class="nav__link"> Inicio </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Productos</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#premium" class="nav__link">Premium</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#blog" class="nav__link">Blog</a>
+            </li>
+
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-circle-line"></i>
+          </div>
+        </div>
+
+        <!-- Toggle Button -->
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-fill"></i>
+        </div>
+
+      </nav>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+
+      <!-- Home -->
+      <section class="home grid" id="home">
+
+        <div class="home__container">
+
+          <div class="home__content container">
+            
+            <h1 class="home__title">
+              Tu Café Favorito Aquí y Más <span>...</span>
+            </h1>
+            <p class="home__description">
+              Pide aquello que más desees
+            </p>
+
+            <div class="home__data">
+              <div class="home__data-group">
+                 <h2 class="home__data-number">+182mil</h2>
+                 <h3 class="home__data-title">Clientes</h3>
+                 <p class="home__data-description">
+                  Nuevos al año que confían en nuestros productos.
+                 </p>
+        
+              </div>
+
+              <div class="home__data-group">
+                <h2 class="home__data-number">+196</h2>
+                <h3 class="home__data-title">Productos Exclusivos</h3>
+                <p class="home__data-description">
+                 Con los ingredientes más exquisitos.
+                </p>
+       
+             </div>
+            </div>
+
+            <a href="#specialty">
+              <img src="./imgs/scroll.png" alt="img. scroll" class="home__scroll">
+            </a>
+          </div>
+
+        </div>
+
+        <img src="./imgs/home.png" alt="Img Cafe" class="home__img">
+
+      </section> 
+
+      <!-- Specialty -->
+
+      <div class="specialty section container" id="specialty">
+
+        <div class="specialty__container">
+
+          <div class="specialty__box">
+            <h2 class="section__title">
+              Nuestros Cafés Especiales tienen ese toque mágico que hará feliz y subir ánimos ¡a quien sea!
+            </h2>
+
+            <div>
+              <a href="#" class="button specialty__button">Ver Más</a>
+            </div>
+          </div>
+
+          <div class="specialty__category">
+
+            <!-- 1 -->
+            <div class="specialty__group specialty__line">
+              <img src="./imgs/specialty1.png" alt="Cafe icono" class="specialty__img">
+
+              <h3 class="specialty__title">Café Único</h3>
+              <p class="specialty__description">
+                Un verdadero sabor de exquisites con los mejores productos. 
+              </p>
+            </div>
+
+            <!-- 2 -->
+            <div class="specialty__group specialty__line">
+              <img src="./imgs/specialty2.png" alt="Galleta icono" class="specialty__img">
+
+              <h3 class="specialty__title">Dulces Galletas</h3>
+              <p class="specialty__description">
+                Acompaña tu café con unas crujientes galletas recién horneadas.
+              </p>
+            </div>
+
+            <!-- 3 -->
+            <div class="specialty__group">
+              <img src="./imgs/specialty3.png" alt="Cafe icono" class="specialty__img">
+
+              <h3 class="specialty__title"> Disfrutando a tu paso </h3>
+              <p class="specialty__description">
+                Disfruta y lleva contigo el delicioso Café Bristó.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Products -->
+
+      <section class="products section" id="products">
+        
+        <div class="products__container container">
+
+          <h2 class="section__title">
+            Te mostramos nuestro menú más exquisito 
+          </h2>
+
+          <ul class="products__filters">
+
+            <!-- 1 -->
+            <li class="products__item products__line active-products " data-filter=".orders">
+              <h3 class="products__title"> Más Pedido </h3>
+              <span class="products__stock"> 3 productos </span>
+            </li>
+
+            <!-- 2 -->
+            <li class="products__item products__line" data-filter=".coffe">
+              <h3 class="products__title"> Café Especial </h3>
+              <span class="products__stock"> 4 productos </span>
+            </li>
+
+            <!-- 3 -->
+            <li class="products__item" data-filter=".cake">
+              <h3 class="products__title"> Galletas y Dulces </h3>
+              <span class="products__stock">4 productos</span>
+            </li>
+          </ul>
+
+          <div class="products__content grid">
+
+            <!--  Mas Pedido  -->
+            
+            <!-- 1.a -->
+            <article class="products__card orders">
+              <div class="products__shape">
+                <img src="./imgs/delicacies1.png" alt="producto cafe" class="products__img">
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$3.5</h2>
+                <h3 class="products__name">Galletas Recién Horneadas </h3>
+
+                <button class="button products__button">
+                  <i class="ri-shopping-bag-3-line"></i> 
+                </button>
+              </div>
+            </article>
+
+            <!-- 2.a -->
+            <article class="products__card orders">
+              <div class="products__shape">
+                <img src="./imgs/delicacies2.png" alt="producto cafe" class="products__img">
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$3</h2>
+                <h3 class="products__name"> Croissant </h3>
+
+                <button class="button products__button">
+                  <i class="ri-shopping-bag-3-line"></i> 
+                </button>
+              </div>
+            </article>
+
+            <!-- 3.a -->
+            <article class="products__card orders">
+              <div class="products__shape">
+                <img src="./imgs/delicacies3.png" alt="producto cafe" class="products__img">
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$5</h2>
+                <h3 class="products__name">Pretzel Bristó</h3>
+
+                <button class="button products__button">
+                  <i class="ri-shopping-bag-3-line"></i> 
+                </button>
+              </div>
+            </article>    
+
+            <!--  Café Especial  -->
+
+            <!-- 1.b -->
+            <article class="products__card coffe">
+              <div class="products__shape">
+                <img src="./imgs/coffee1.png" alt="producto cafe" class="products__img">
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$2</h2>
+                <h3 class="products__name">Café Negro</h3>
+
+                <button class="button products__button">
+                  <i class="ri-shopping-bag-3-line"></i> 
+                </button>
+              </div>
+            </article>
+
+            <!-- 2.b -->
+            <article class="products__card coffe">
+              <div class="products__shape">
+                <img src="./imgs/coffee2.png" alt="producto cafe" class="products__img">
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$3.5</h2>
+                <h3 class="products__name">Cappuccino</h3>
+
+                <button class="button products__button">
+                  <i class="ri-shopping-bag-3-line"></i> 
+                </button>
+              </div>
+            </article>
+
+            <!-- 3.b -->
+            <article class="products__card coffe">
+              <div class="products__shape">
+                <img src="./imgs/coffee3.png" alt="producto cafe" class="products__img">
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price"> $2.5</h2>
+                <h3 class="products__name"> Café con Leche </h3>
+
+                <button class="button products__button">
+                  <i class="ri-shopping-bag-3-line"></i> 
+                </button>
+              </div>
+            </article>
+
+            <!-- 4.b -->
+            <article class="products__card coffe">
+              <div class="products__shape">
+                <img src="./imgs/coffee4.png" alt="producto cafe" class="products__img">
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$4 </h2>
+                <h3 class="products__name"> Mokaccino</h3>
+
+                <button class="button products__button">
+                  <i class="ri-shopping-bag-3-line"></i> 
+                </button>
+              </div>
+            </article>
+
+            <!--  Galletas y Dulces-->
+
+            <!-- 1.c -->
+            <article class="products__card cake">
+              <div class="products__shape">
+                <img src="./imgs/cake1.png" alt="producto cafe" class="products__img">
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$4.5</h2>
+                <h3 class="products__name">Torta de Zanahoria</h3>
+
+                <button class="button products__button">
+                  <i class="ri-shopping-bag-3-line"></i> 
+                </button>
+              </div>
+            </article>
+
+            <!-- 2.c -->
+            <article class="products__card cake">
+              <div class="products__shape">
+                <img src="./imgs/cake2.png" alt="producto cafe" class="products__img">
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$3.5</h2>
+                <h3 class="products__name">Croissant de Chocolate </h3>
+
+                <button class="button products__button">
+                  <i class="ri-shopping-bag-3-line"></i> 
+                </button>
+              </div>
+            </article>
+
+            <!-- 3.c -->
+            <article class="products__card cake">
+              <div class="products__shape">
+                <img src="./imgs/cake3.png" alt="producto cafe" class="products__img">
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$7.5</h2>
+                <h3 class="products__name">Panquecas con Miel </h3>
+
+                <button class="button products__button">
+                  <i class="ri-shopping-bag-3-line"></i> 
+                </button>
+              </div>
+            </article>
+
+            <!-- 4.c -->
+            <article class="products__card cake">
+              <div class="products__shape">
+                <img src="./imgs/cake4.png" alt="producto cafe" class="products__img">
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$5</h2>
+                <h3 class="products__name"> Torta de 3 Leches </h3>
+
+                <button class="button products__button">
+                  <i class="ri-shopping-bag-3-line"></i> 
+                </button>
+              </div>
+            </article>
+
+
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- Quality -->
+      
+      <section class="quality section" id="premium">
+       
+        <div class="quality__container container">
+          <h2 class="section__title">
+            ¡Ofrecemos los productos con la mejor calidad de sus ingredientes!
+          </h2>
+
+          <div class="quality__content grid">
+            <div class="quality__images">
+              <img src="./imgs/quality1.png" alt="cafe producto" class="quality__img-big">
+              <img src="./imgs/quality2.png" alt="cafe producto" class="quality__img-small">
+            </div>
+
+            <div class="quality__data">
+              <h1 class="quality__title"> Café Premium </h1>
+              <h2 class="quality__price">$182.99</h2>
+              <span class="quality__special"> Precio Oferta </span>
+              <p class="quality__description">
+                Te prometemos que este café está hecho de la mejor cosecha del país. Trabajado para aprovechar 
+                todo su sabor y dando así una experiencia única para cada día.
+              </p>
+
+              <div class="quality__buttons">
+                <button class="button">
+                  Comprar
+                </button>
+
+                <a href="#" class="quality__button">
+                  Ver Más <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Logos -->
+
+      <section class="logo section">
+        <div class="logo__container container grid">
+          <img src="./imgs/logocoffee1.png" alt="Logo Cafe" class="logo__img">
+          <img src="./imgs/logocoffee2.png" alt="Logo Cafe" class="logo__img">
+          <img src="./imgs/logocoffee3.png" alt="Logo Cafe" class="logo__img">
+          <img src="./imgs/logocoffee4.png" alt="Logo Cafe" class="logo__img">
+          <img src="./imgs/logocoffee5.png" alt="Logo Cafe" class="logo__img">
+        </div>
+      </section>
+
+      <!-- Blog -->
+
+      <section class="blog section" id="blog">
+        <div class="blog__container container">
+          <h2 class="section__title">
+            Nuestro Blog Café está lleno de tips interesantes cada semana.
+          </h2>
+
+          <div class="blog__content grid">
+           
+            <!-- 1 -->
+            <article class="blog__card">
+
+              <div class="blog__image">
+                <img src="./imgs/blog1.png" alt="Imagen de blog cafe" class="blog__img">
+                <a href="#" class="blog__button">
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+
+              </div>
+
+              <div class="blog__data">
+                <h2 class="blog__title">
+                  Los 10 mejores cafés para comenzar un día de trabajo.
+                </h2>
+                <p class="blog__description">
+                  En este post hablamos de los 10 cafés que ayudan a estimular las energías y las ideas
+                  para un día largo de trabajo.
+                </p>
+
+                <div class="blog__footer">
+                  
+                  <!-- 1 -->
+                  <div class="blog__reaction">
+                    <i class="ri-chat-3-line"></i>
+                    <span>19</span>
+
+                  </div>
+
+                  <!-- 2 -->
+                  <div class="blog__reaction">
+                    <i class="ri-eye-line"></i>
+                    <span>25mil</span>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </article>
+
+            <!-- 2 -->
+            <article class="blog__card">
+
+              <div class="blog__image">
+                <img src="./imgs/blog2.png" alt="Imagen blog de cafe" class="blog__img">
+                <a href="#" class="blog__button">
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+
+              </div>
+
+              <div class="blog__data">
+                <h2 class="blog__title">
+                  Los mejores beneficios de tomar café por las mañanas.
+                </h2>
+                <p class="blog__description">
+                  En este post hablamos de los mejores beneficios que tendrás al tomar una taza de café por 
+                  la mañana. ¡Entérate de cuales son! 
+                </p>
+
+                <div class="blog__footer">
+                  
+                  <!-- 1 -->
+                  <div class="blog__reaction">
+                    <i class="ri-chat-3-line"></i>
+                    <span>13</span>
+
+                  </div>
+
+                  <!-- 2 -->
+                  <div class="blog__reaction">
+                    <i class="ri-eye-line"></i>
+                    <span>450mil</span>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </article>
+
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Café Bristó</h1>
+
+        <div class="footer__content grid">
+
+          <div class="footer__data">
+
+            <p class="footer__description">
+              ¡Suscríbete a nuestra Newsletter!
+            </p>
+
+            <div class="footer__newsletter">
+              <input type="email" placeholder="Tu correo electrónico..." class="footer__input">
+              <button class="footer__button">
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- 1 -->
+          <div class="footer__data">
+            <h2 class="footer__subtitle"> Dirección </h2>
+            <p class="footer__information">
+              Calle Madrid, Las Mercedes. <br>
+              Caracas, Venezuela
+              <img src="./imgs/flag.png" alt="Bandera Venezuela" class="footer__flag">
+            </p>            
+          </div>
+
+          <!-- 2 -->
+          <div class="footer__data">
+            <h2 class="footer__subtitle"> Contacto </h2>
+            <p class="footer__information">
+              (+58) 424 1796708 <br>
+              cafebristo@dynamiclub.com
+            </p>
+          </div>
+
+          <!-- 3 -->
+          <div class="footer__data">
+            <h2 class="footer__subtitle"> Oficina </h2>
+            <p class="footer__information">
+              Lunes a Sábados <br>
+              9 a.m a 5 p.m.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="footer__group">
+          <ul class="footer__social">
+            <a href="http://www.instagram.com/joedavidmr" target="_blank" class="footer__social-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+  
+            <a href="#" target="_blank" class="footer__social-link">
+              <i class="ri-twitter-line"></i>
+            </a>
+  
+            <a href="#" target="_blank" class="footer__social-link">
+              <i class="ri-facebook-fill"></i>
+            </a>
+          </ul>
+
+          <span class="footer__copy">
+            &#169; Dynamic Club. Todos los Derechos Reservados. 2023.
+          </span>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Scroll Up -->
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- Mixitup Filter -->
+
+    <script src="./javascript/mixitup.min.js"></script>
+    
+    <!--Main JS -->
+
+    <script src="./javascript/main.js"></script>
+
+  </body>
+</html>
